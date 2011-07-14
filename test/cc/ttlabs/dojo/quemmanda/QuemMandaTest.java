@@ -3,6 +3,9 @@ package cc.ttlabs.dojo.quemmanda;
 
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
+
+import static org.junit.Assert.*;
 
 public class QuemMandaTest {
 
@@ -15,18 +18,26 @@ public class QuemMandaTest {
 	}
 
 	// Fulano é empregado de uma grande corporação
-	// Fulano quando está no trabalho não tem autoridade
+	// Fulano quando está no [trabalho] não tem autoridade
 	// e quem manda por lá é o seu Chefe
+	
+	@Test
+	public void chefeMandaNoTrabalho()
+	{
+		Fulano f = new Fulano();
+		Trabalho t = new Trabalho(f);
+		assertFalse(t.quemManda().equals(f));
+	}
 	
 	
 	// Fulano é lider de uma banda
-	// E quando está no palco é o dono da situação
+	// E quando está no [palco] é o dono da situação
 	// e junto com seus parceiros de banda fazem 
 	// a alegria do público
 	
 	
 	// Fulano tem uma familia, mulher e dois filhos
-	// mas em casa ele sempre tem autoridade
+	// mas em [casa] ele sempre tem autoridade
 	// de dizer a sua mulher quem é que manda: ela. 
 	
 	
