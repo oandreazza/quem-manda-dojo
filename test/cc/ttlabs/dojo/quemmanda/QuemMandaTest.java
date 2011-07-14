@@ -27,7 +27,8 @@ public class QuemMandaTest {
 	@Test
 	public void chefeMandaNoTrabalho()
 	{
-		Trabalho t = new Trabalho(f);
+		
+		ContratoDeAutoridade t = new Trabalho(f);
 		
 		Object o = t.quemManda();
 		
@@ -49,16 +50,25 @@ public class QuemMandaTest {
 	@Test
 	public void mulherMandaNaFamilia(){
 	    
-		Familia fam = new Familia(f);
+		ContratoDeAutoridade fam = new Familia(f);
 		
 		Object o = fam.quemManda();
 		
 		assertTrue(o instanceof Mulher);
 	}
 	
-	@Test
-	public void testaContratoDeAutoridadeComFamilia() {
-		assertTrue("Deveria ser uma instancia de ContratoDeAutoridade", new Familia(f) instanceof ContratoDeAutoridade);
+	// Fulano é empregado de uma grande corporação
+	// Fulano quando está no [trabalho] não tem autoridade
+	// e quem manda por lá é o seu Chefe
+	
+	@Test 
+	public void fulanoQuandoFazCheckinNoTrabalhoNaoManda()
+	{
+		Trabalho trabalho = new Trabalho();
+		trabalho.checkin(f);
+		
+		assertFalse(f.temAutoridade());
+		
 	}
 	
 	
