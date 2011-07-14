@@ -41,11 +41,13 @@ public class QuemMandaTest {
 	// e junto com seus parceiros de banda fazem 
 	// a alegria do público
 
-	//TODO
+	//TODO implementar contexto do palco
 	
 	// Fulano tem uma familia, mulher e dois filhos
 	// mas em [casa] ele sempre tem autoridade
 	// de dizer a sua mulher quem é que manda: ela. 
+	
+	//TODO contexto do fulano com a familia é a casa, não a familia. 
 	
 	@Test
 	public void mulherMandaNaFamilia(){
@@ -60,9 +62,10 @@ public class QuemMandaTest {
 	// Fulano é empregado de uma grande corporação
 	// Fulano quando está no [trabalho] não tem autoridade
 	// e quem manda por lá é o seu Chefe
+
 	
 	@Test 
-	public void fulanoQuandoFazCheckinNoTrabalhoNaoManda()
+	public void fulanoQuandoFazCheckinNoTrabalhoNaoTemAutoridade()
 	{
 		Trabalho trabalho = new Trabalho();
 		trabalho.checkin(f);
