@@ -9,8 +9,11 @@ import static org.junit.Assert.*;
 
 public class QuemMandaTest {
 
+	Fulano f;
+	
 	@Before
 	public void setUp() throws Exception {
+	   f = new Fulano();
 	}
 
 	@After
@@ -24,22 +27,39 @@ public class QuemMandaTest {
 	@Test
 	public void chefeMandaNoTrabalho()
 	{
-		Fulano f = new Fulano();
 		Trabalho t = new Trabalho(f);
-		assertFalse(t.quemManda().equals(f));
+		
+		Object o = t.quemManda();
+		
+		assertTrue(o instanceof Chefe);
+
 	}
-	
 	
 	// Fulano é lider de uma banda
 	// E quando está no [palco] é o dono da situação
 	// e junto com seus parceiros de banda fazem 
 	// a alegria do público
-	
+
+	//TODO
 	
 	// Fulano tem uma familia, mulher e dois filhos
 	// mas em [casa] ele sempre tem autoridade
 	// de dizer a sua mulher quem é que manda: ela. 
 	
+	@Test
+	public void mulherMandaNaFamilia(){
+	    
+		Familia fam = new Familia(f);
+		
+		Object o = fam.quemManda();
+		
+		assertTrue(o instanceof Mulher);
+	}
+	
+	@Test
+	public void testaContratoDeAutoridadeComFamilia() {
+		assertTrue("Deveria ser uma instancia de ContratoDeAutoridade", new Familia(f) instanceof ContratoDeAutoridade);
+	}
 	
 	
 }
