@@ -8,6 +8,7 @@ import org.junit.Before;
 import org.junit.Test;
 
 import cc.ttlabs.dojo.quemmanda.onde.Casa;
+import cc.ttlabs.dojo.quemmanda.onde.ContextoDeAutoridade;
 import cc.ttlabs.dojo.quemmanda.quem.Familia;
 import cc.ttlabs.dojo.quemmanda.quem.Fulano;
 import cc.ttlabs.dojo.quemmanda.quem.Mulher;

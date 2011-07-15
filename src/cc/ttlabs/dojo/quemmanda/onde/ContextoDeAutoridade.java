@@ -1,4 +1,4 @@
-package cc.ttlabs.dojo.quemmanda;
+package cc.ttlabs.dojo.quemmanda.onde;
 
 import cc.ttlabs.dojo.quemmanda.quem.Pessoa;
 

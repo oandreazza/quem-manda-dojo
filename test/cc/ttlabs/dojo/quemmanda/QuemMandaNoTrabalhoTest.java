@@ -7,6 +7,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
+import cc.ttlabs.dojo.quemmanda.onde.ContextoDeAutoridade;
 import cc.ttlabs.dojo.quemmanda.onde.Trabalho;
 import cc.ttlabs.dojo.quemmanda.quem.Chefe;
 import cc.ttlabs.dojo.quemmanda.quem.Fulano;

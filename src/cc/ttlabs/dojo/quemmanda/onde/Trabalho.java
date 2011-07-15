@@ -1,6 +1,5 @@
 package cc.ttlabs.dojo.quemmanda.onde;
 
-import cc.ttlabs.dojo.quemmanda.ContextoDeAutoridade;
 import cc.ttlabs.dojo.quemmanda.quem.Chefe;
 import cc.ttlabs.dojo.quemmanda.quem.Fulano;
 import cc.ttlabs.dojo.quemmanda.quem.Pessoa;
