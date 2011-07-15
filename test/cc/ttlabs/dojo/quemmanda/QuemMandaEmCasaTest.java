@@ -9,6 +9,7 @@ import org.junit.Test;
 
 import cc.ttlabs.dojo.quemmanda.onde.Casa;
 import cc.ttlabs.dojo.quemmanda.onde.ContextoDeAutoridade;
+import cc.ttlabs.dojo.quemmanda.onde.Local;
 import cc.ttlabs.dojo.quemmanda.quem.Familia;
 import cc.ttlabs.dojo.quemmanda.quem.Fulano;
 import cc.ttlabs.dojo.quemmanda.quem.Mulher;
@@ -20,13 +21,14 @@ public class QuemMandaEmCasaTest {
 
 	private Pessoa fulano;
 	private Mulher mulher;
-	private ContextoDeAutoridade emCasa;
+	private Local emCasa;
 
 	@Before
 	public void setUp() throws Exception {
 		fulano = new Fulano();
 		mulher = new Mulher();
-		emCasa = fulanoEmCasa();
+		
+		emCasa = new Local(fulanoEmCasa());
 	}
 
 	@After

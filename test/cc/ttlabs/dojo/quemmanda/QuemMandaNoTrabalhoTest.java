@@ -7,7 +7,7 @@ import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import cc.ttlabs.dojo.quemmanda.onde.ContextoDeAutoridade;
+import cc.ttlabs.dojo.quemmanda.onde.Local;
 import cc.ttlabs.dojo.quemmanda.onde.Trabalho;
 import cc.ttlabs.dojo.quemmanda.quem.Chefe;
 import cc.ttlabs.dojo.quemmanda.quem.Fulano;
@@ -17,13 +17,16 @@ public class QuemMandaNoTrabalhoTest {
 
 	private Pessoa fulano;
 	private Chefe chefe;
-	private ContextoDeAutoridade noTrabalho;
+	private Local noTrabalho;
 
 	@Before
 	public void setUp() throws Exception {
 		fulano = new Fulano();
 		chefe = new Chefe();
-		noTrabalho = fulanoNoTrabalho();
+		noTrabalho = new Local(
+				          new Trabalho()
+				             .checkin(fulano)
+		                	 .setChefe(chefe));
 	}
 
 	@After
@@ -40,11 +43,5 @@ public class QuemMandaNoTrabalhoTest {
 	@Test
 	public void fulanoQuandoEstaNoTrabalhoNaoTemAutoridade() {
 		assertFalse(fulano.temAutoridade());
-	}
-
-	private ContextoDeAutoridade fulanoNoTrabalho() {
-		ContextoDeAutoridade contexto = new Trabalho().checkin(fulano)
-				.setChefe(chefe);
-		return contexto;
 	}
 }
