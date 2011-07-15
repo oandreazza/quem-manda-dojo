@@ -1,6 +1,6 @@
 package cc.ttlabs.dojo.quemmanda;
 
-public class Trabalho implements ContratoDeAutoridade{
+public class Trabalho implements ContextoDeAutoridade{
 
 	Chefe c = new Chefe();
 	

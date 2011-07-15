@@ -1,6 +1,6 @@
 package cc.ttlabs.dojo.quemmanda;
 
-public interface ContratoDeAutoridade {
+public interface ContextoDeAutoridade {
 
 	Object quemManda();
 

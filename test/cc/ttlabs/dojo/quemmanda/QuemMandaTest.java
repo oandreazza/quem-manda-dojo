@@ -20,6 +20,8 @@ public class QuemMandaTest {
 	public void tearDown() throws Exception {
 	}
 
+	// TODO testes devem ser expressivos e não precisar de nenhum comentário
+	
 	// Fulano é empregado de uma grande corporação
 	// Fulano quando está no [trabalho] não tem autoridade
 	// e quem manda por lá é o seu Chefe
@@ -28,11 +30,11 @@ public class QuemMandaTest {
 	public void chefeMandaNoTrabalho()
 	{
 		
-		ContratoDeAutoridade t = new Trabalho(f);
+		ContextoDeAutoridade contexto = new Trabalho(f);
 		
-		Object o = t.quemManda();
+		Object pessoa = contexto.quemManda();
 		
-		assertTrue(o instanceof Chefe);
+		assertTrue(pessoa instanceof Chefe);
 
 	}
 	
@@ -50,13 +52,13 @@ public class QuemMandaTest {
 	//TODO contexto do fulano com a familia é a casa, não a familia. 
 	
 	@Test
-	public void mulherMandaNaFamilia(){
+	public void mulherMandaEmCasa(){
 	    
-		ContratoDeAutoridade fam = new Familia(f);
+		ContextoDeAutoridade contexto = new Casa(f);
 		
-		Object o = fam.quemManda();
+		Object pessoa = contexto.quemManda();
 		
-		assertTrue(o instanceof Mulher);
+		assertTrue(pessoa instanceof Mulher);
 	}
 	
 	// Fulano é empregado de uma grande corporação

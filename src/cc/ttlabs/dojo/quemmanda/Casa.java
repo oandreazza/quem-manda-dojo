@@ -1,9 +1,9 @@
 package cc.ttlabs.dojo.quemmanda;
 
-public class Familia implements ContratoDeAutoridade {
+public class Casa implements ContextoDeAutoridade {
 
 	
-	public Familia(Fulano f) {
+	public Casa(Fulano f) {
 		// TODO Auto-generated constructor stub
 	}
 
