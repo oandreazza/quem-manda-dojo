@@ -1,7 +1,9 @@
 package cc.ttlabs.dojo.quemmanda;
 
+import cc.ttlabs.dojo.quemmanda.quem.Pessoa;
+
 public interface ContextoDeAutoridade {
 
-	Object quemManda();
+	Pessoa quemManda();
 
 }

@@ -1,11 +1,15 @@
-package cc.ttlabs.dojo.quemmanda;
+package cc.ttlabs.dojo.quemmanda.quem;
 
-public class Fulano {
-	
+public class Pessoa {
+
 	private boolean _temAutoridade;
 
+	public Pessoa() {
+		super();
+		setTemAutoridade(false);
+	}
+
 	public boolean temAutoridade() {
-		// TODO Auto-generated method stub
 		return _temAutoridade;
 	}
 
