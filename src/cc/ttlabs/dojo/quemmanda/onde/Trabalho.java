@@ -8,7 +8,8 @@ public class Trabalho implements ContextoDeAutoridade{
 
 	private Chefe chefe = null;
 	
-	public Trabalho() {
+	public Trabalho(Chefe chefe) {
+		this.chefe = chefe;
 	}
 
 	public Pessoa quemManda() {
@@ -20,10 +21,4 @@ public class Trabalho implements ContextoDeAutoridade{
 			pessoa.setTemAutoridade(false);
 		return this;
 	}
-	
-	public Trabalho setChefe(Chefe chefe){
-		this.chefe = chefe;
-		return this;
-	}
-
 }

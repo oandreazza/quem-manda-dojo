@@ -24,9 +24,8 @@ public class QuemMandaNoTrabalhoTest {
 		fulano = new Fulano();
 		chefe = new Chefe();
 		noTrabalho = new Local(
-				          new Trabalho()
-				             .checkin(fulano)
-		                	 .setChefe(chefe));
+				          new Trabalho(chefe)
+				             .checkin(fulano));
 	}
 
 	@After
