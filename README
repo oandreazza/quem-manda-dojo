@@ -2,38 +2,37 @@
 OBJETIVO:
 ==========
 
-O objetivo deste Dojo é brincar com a vida 
-de um [fulano] e saber "quem é que manda"
+O objetivo deste Dojo √© brincar com a vida 
+de um [fulano] e saber "quem √© que manda"
 em um determinado contexto. 
 
 Dependendo do local [onde] uma determinada 
-pessoa é [quem] manda 
+pessoa √© [quem] manda 
 
 
 BASE:
 =====
 
 Iremos trabalhar neste coding dojo com o 
-padrão de projeto Strategy. 
+padr√£o de projeto Strategy. 
 http://en.wikipedia.org/wiki/Strategy_pattern
 
 
-INFORMAÇÕES PARA GUIAR O DOJO:
+INFORMA√á√ïES PARA GUIAR O DOJO:
 ==============================
 
-Exemplos de histórias que podemos contar do 
+Exemplos de hist√≥rias que podemos contar do 
 fulano. 
 
-Fulano é empregado de uma grande corporação.
-Fulano quando está no [trabalho] não tem autoridade
-e quem manda por lá é o seu Chefe
-		
+Fulano √© empregado de uma grande corpora√ß√£o.
+Fulano quando est√° no [trabalho] n√£o tem autoridade
+e quem manda por l√° √© o seu Chefe.
+	
 Fulano tem uma familia, com mulher e dois filhos
 "mas" em [casa] ele sempre tem autoridade
-de dizer a sua mulher quem é que manda: ela. :-)
+de dizer a sua mulher quem √© que manda: ela. :-)
 
-Fulano é lider de uma [banda]
-Quando está no [palco] é o dono da situação.
+Fulano √© lider de uma [banda]
+Quando est√° no [palco] √© o dono da situa√ß√£o.
 e junto com seus parceiros de banda fazem 
-a alegria do público
-
+a alegria do p√∫blico.
